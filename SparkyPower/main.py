@@ -2,7 +2,7 @@
 building_number = int(input("Enter a number of buildings: "))
 # 2) Display and read a prompt for the number of electrical boxes
 electrical_boxes = int(input("Enter a number of electrical boxes: "))
-# 3) Calculate building revenue
+# 3) Calculate trip revenue
 building_revenue = building_number * 125
 # 4) Calculate electrical box revenue
 electrical_boxes_revenue = electrical_boxes * 51
