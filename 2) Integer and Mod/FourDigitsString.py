@@ -3,7 +3,10 @@
 # was an integer but it is not an integer but a string. Use the index of the string to get the
 # characters.
 
+# 1) Display a prompt for 4-digit integer
 int_num = input("Please enter 4-digit integer number: ")
+
+# 2) Treat the number as a string and print each index per line.
 for num in int_num:
     print(num)
 
