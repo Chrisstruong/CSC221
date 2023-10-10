@@ -10,7 +10,6 @@ first = four_digit_number // 1000
 second = four_digit_number // 100 % 10
 # 4) Find third digit (tens)
 third = four_digit_number // 10 % 100 % 10
-
 # 5) Find last digit (ones)
 last = four_digit_number % 1000 % 100 % 10
 
