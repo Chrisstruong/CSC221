@@ -1,7 +1,10 @@
-# 
+# 3) Write a program for computing the month-by-month balance in your savings account. 
 saving_balance = int(input("Enter your saving acccount balance: "))
+print("_______________________")
+# interest rate constant
 interest_rate = 0.05
 
+# to track whether deposit or withdrawal
 transaction = 0
 month_list = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
@@ -15,4 +18,4 @@ for month in month_list:
         transaction = int(input(f"How much do you want to withdrawal? "))
         saving_balance -= transaction
     saving_balance +=  (saving_balance * interest_rate)
-    print()
+    print("_______________________")

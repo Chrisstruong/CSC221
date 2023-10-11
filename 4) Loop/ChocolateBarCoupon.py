@@ -1,3 +1,4 @@
+print(5 // 6)
 chocolate_expense = int(input("How much money would you like to buy chocolate? "))
 coupon = chocolate_expense
 
@@ -8,8 +9,6 @@ if coupon_remainder == 0:
     total_chocolate += 1
     coupon_remainder = total_chocolate % 6
 
-
-# Coupon after redem
 
 
 
