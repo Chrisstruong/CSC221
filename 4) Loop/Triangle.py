@@ -1,5 +1,4 @@
 # 1) Write a program that draws a triangle. Terminate when user enters 'q'
-
 # Read the input
 user_input = input("Enter number of lines wanted: ")
 
