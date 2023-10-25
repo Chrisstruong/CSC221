@@ -1,9 +1,8 @@
 # Write a game program that prints a chart to the screen showing the randomness of a die.
 import random
-global game_condition 
-game_condition = True
 
-def print_random_chart (number_of_stars):
+def print_random_chart (number_of_stars, total_throws):
+    print(f"A chart of {total_throws} throws:")
     print(f"Dice number 1: {number_of_stars[0]}")
     print(f"Dice number 2: {number_of_stars[1]}")
     print(f"Dice number 3: {number_of_stars[2]}")
@@ -37,15 +36,18 @@ def generating_dice_num(number_of_dice_throws, chart):
 def game_condition():
     dice_chart = ['', '', '', '', '', '']
     number_of_dice_throws = int(input("Please enter positive number of dice throws you want. "))
+    # Checking if num of dice throws is negative
     while number_of_dice_throws <= 0:
         number_of_dice_throws = int(input("Please enter positive number of dice throws you want. "))
+    # Generating * for each index in dice_chart
     dice_chart = generating_dice_num(number_of_dice_throws, dice_chart)
-    print(f"A chart of {number_of_dice_throws} throws:")
-    print_random_chart(dice_chart)
+    # Print out the chart
+    print_random_chart(dice_chart, number_of_dice_throws)
+    # Asking if the client would like to run again
     print("Would you like to play again?")
     char_response = input("Enter a character ('y' for yes): ")
     print()
     if char_response == 'y':
-        return game_condition()
+        game_condition()
 
 game_condition()
