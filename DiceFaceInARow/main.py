@@ -1,6 +1,7 @@
 # This game throws a dice until a particular dice face number appears in a row a certain number of times.
 import random
 
+# Function for option 1
 def trace_the_game(target_times_repeated_in_a_row, target_num):
     number_of_throws = 1
     times_repeated_in_a_row_in_function = 0
@@ -15,6 +16,7 @@ def trace_the_game(target_times_repeated_in_a_row, target_num):
         print(f"Number of throws is {number_of_throws:,}")
         number_of_throws += 1
 
+# Function for option 2
 def immediate_answer(target_times_repeated_in_a_row, target_num):
     number_of_throws = 1
     times_repeated_in_a_row_in_function = 0
