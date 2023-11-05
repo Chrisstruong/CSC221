@@ -4,6 +4,7 @@ import random
 random_num = random.randint(0, 100)
 continue_condition = True
 
+# Checking guessing number
 def verify_guess(amount, random_num):
     your_guess = int(input("Please enter your guess: "))
     if your_guess == random_num:
@@ -16,6 +17,8 @@ def verify_guess(amount, random_num):
         verify_guess(amount + 1, random_num)
         
 verify_guess(1, random_num)
+
+# Check whether the player want to continue
 while continue_condition:
     print("Would you like to play again? ")
     answer = input("Enter a character ('y' for yes): ")
@@ -23,5 +26,6 @@ while continue_condition:
         random_num = random.randint(0, 100)
         verify_guess(1, random_num)
     else:
+        print("Goodbye!")
         continue_condition = False
 
