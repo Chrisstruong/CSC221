@@ -22,7 +22,7 @@ def sum_calculation(index, sum, x, equation):
         index += 1
     output_sum(sum)
 def output_sum(sum):
-    print(f"sumOfTerms is {sum}")
+    print(f"sumOfTerms is {sum:,}")
 
 
 enter_degree()
