@@ -10,6 +10,7 @@ def enter_degree():
         enter_degree()
     else:
         return -1
+    
 def adding_coefficient(degree):
     coef_list = []
     for num in range(degree + 1):
